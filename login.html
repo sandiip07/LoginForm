@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login From</title>
+  </head>
+  <link rel="stylesheet" href="design.css" />
+ 
+  <body>
+    <div class="container">
+      <span class="box" id="left">
+        <h1>REGISTER FORM</h1>
+      </span>
+
+      <span class="box" id="right">
+        <p>Sign up</p>
+        <form
+          action="somwthing.php"
+          name="myForm"
+          onsubmit="return validForm()"
+        >
+          <div id="name">
+            NAME<input type="text" name="fname" /><span
+              class="formError"
+            ></span>
+          </div>
+
+          <div id="uname">
+            USERNAME<input type="text" name="funame" /><span
+              class="formerror"
+            ></span>
+          </div>
+
+          <div id="email">
+            EMAIL<input type="email" name="femail" /><span
+              class="formerror"
+            ></span>
+          </div>
+
+          <div id="pass">
+            PASSWORD<input type="password" name="fpass" /><span
+              class="formerror"
+            ></span>
+          </div>
+
+          <div id="cpass">
+            CONFIRM PASSWORD<input type="password" name="fcpass" /><span
+              class="formerror"
+            ></span>
+          </div>
+
+          <div><input type="checkbox" /><span> Remembre me</span></div>
+
+          <input
+            id="button"
+            type="submit"
+            value="CREATE ACCOUNT"
+            onclick="myFun()"
+          />
+        </form>
+      </span>
+    </div>
+  </body>
+  <script src="form.js">
+    
+  </script>
+</html>
